@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  /* 
+  /*  Calculadora simples
   print('Digite escolha um operador \n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão');
 
   double operador = double.parse(stdin.readLineSync()!);
@@ -35,7 +35,7 @@ void main() {
   }
 */
 
-  /* 
+  /* Lista de frutas
   List<String> lista = ['maçã', 'banana', 'laranja', 'uva'];
   lista.add('abacaxi');
   lista.remove('banana');
@@ -43,13 +43,13 @@ void main() {
   print(lista);
   */
 
-  /*
+  /* Mapa de usuário
   Map<int, String> user = {0: 'João', 1: 'idade', 2: 'dev'};
 
   print(user);
   */
 
-  /*
+  /* Verificação de nome IF ELSE
   var nome = true;
   if (nome == true) {
     print("Nome é verdadeiro $nome");
@@ -58,13 +58,13 @@ void main() {
   }
   */
 
-  /*
+  /* For loop
   for (int i = 1; i <= 10; i++) {
     print("Número: $i");
   }
   */
 
-  /*
+  /* For loop com soma de números pares
   print(
     "Informe um número inteiro para calcular a soma dos numeros pares de 0 até o numero digitado: ",
   );
@@ -80,4 +80,28 @@ void main() {
   }
   print("Soma dos números pares: $count");
   */
+
+  /* While loop
+  print(
+    "Digite um valor inicial para contar até 10: ",
+  );
+  double valor = double.parse(stdin.readLineSync()!);
+
+  while (valor <= 10) {
+    print("Valor: $valor");
+    valor++;
+    };
+  */
+
+  repeticaoDoWhile();
+}
+
+repeticaoDoWhile() {
+  print("Digite um valor inicial para contar até 10: ");
+  double valor = double.parse(stdin.readLineSync()!);
+
+  do {
+    print("Valor: $valor");
+    valor++;
+  } while (valor <= 10);
 }
