@@ -27,7 +27,7 @@ abstract class Car {  //abstract modelo/base contrato, receita do bolo
   }
 
     void decrease(int speed) {
-      if (velocity < 0) {
+      if (velocity <= 0) {
         velocity = 0;
         
       } else {
